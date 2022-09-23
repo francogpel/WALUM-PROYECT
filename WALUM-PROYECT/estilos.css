@@ -92,11 +92,11 @@ iframe  {
 
 .visitanos  {
     color: #3ec70b;
-    font-family: sans-serif;
+    font-weight: bold;
     background-color: black;
     opacity: 0.8;
-    padding: 0% 5% 0% 20%;
-    width: 70%;
+    padding: 0% 5% 0% 23%;
+    width: 67%;
     margin-left: 3%;
     border: solid 0.1em #3ec70b;
     border-radius: 0.7em;
