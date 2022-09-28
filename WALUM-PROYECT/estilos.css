@@ -6,7 +6,9 @@ body    {
     padding: 0;
     background: url(./img/vista1.jpg);   
     background-size:cover;
-    background-position: unset;
+    /* background-position: unset; */
+    width: 100%;
+    height: 100vh;
     }
 
 /* logo de inicio */
@@ -27,7 +29,7 @@ nav {
     background-color: rgb(0, 0, 0);
     opacity: 0.9;
 padding: 15px 0px;
-
+    
 }
 
 .navegacion {
@@ -38,7 +40,7 @@ padding: 15px 0px;
     flex-direction: row;
     justify-content: flex-end;
     align-items:flex-end;
-
+   
 }
 
 .menu-inicio    {
@@ -160,8 +162,8 @@ footer  {
 /* DISEÑOS */
 
 .abertura  {
-    width: 340px;
-    height: 250px;
+    width: 320px;
+    height: 230px;
     border-radius: 0.3em;
     box-shadow: 5px 5px 15px #3ec70b
     
@@ -183,21 +185,23 @@ footer  {
 }
 
 .ab  {
-    font-size: 2.1rem;
-    color: #3ec70b;
+    font-size: 1.9rem;
+    color:   #3ec70b;
     position:absolute;
     font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
 }
 .ab {
     top: 20%; 
-    left: 0%;
+    left: 3%;
     transform: translate(50%, 50%);
-    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1) ;
 }
 
 
 .interior   {
-    height: 250px;
+    width: 320px;
+    height: 230px;
     border-radius: 0.3em;
     box-shadow: 5px 5px 15px #3ec70b
 }
@@ -220,20 +224,23 @@ footer  {
 }
 
 .in  {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     color: #3ec70b;
     position:absolute;
     font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
 }
 .in {
     top: 20%; 
-    left: 0%;
+    left: 3%;
     transform: translate(50%, 50%);
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
 .vista  {
-    height: 250px;
+    /* height: 250px; */
+    width: 437px;
+    height: 230px;
     border-radius: 0.3em;
     box-shadow: 5px 5px 15px #3ec70b
 }
@@ -256,22 +263,23 @@ footer  {
 }
 
 .vi  {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     color: #3ec70b;
     position:absolute;
     font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
 }
 .vi {
     top: 20%; 
-    left: 27%;
+    left: 30%;
     transform: translate(50%, 50%);
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
 
 .casas  {
-    width: 457px;
-    height: 250px;
+    width: 437px;
+    height: 230px;
     border-radius: 0.3em;
     box-shadow: 5px 5px 15px #3ec70b;
     
@@ -295,21 +303,22 @@ footer  {
 }
 
 .ca  {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     color: #3ec70b;
     position:absolute;
-    font-weight: bold;
+    font-weight: bold; 
+    -webkit-text-stroke: 0.5px   #000000;
 }
 .ca {
     top: 20%; 
-    left: 27%;
+    left: 30%;
     transform: translate(50%, 50%);
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
 
 .obras  {
-    height: 590px;
+    height: 550px;
     width: 170px;
     border-radius: 0.5em;
     box-shadow: 5px 5px 15px #3ec70b;
@@ -334,25 +343,26 @@ footer  {
 }
 
 .ob  {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: #3ec70b;
     position:absolute;
     font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
   
 }
 .ob {
     bottom: 45%; 
-    right: 67%;
+    right: 65%;
     transform: translate(50%, 50%);
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
 
 .grid-casilleros   {
-    width: 100%;
+
     max-width: 900px;
-    margin: auto;
-    
+    margin: 0px 50px;
+    grid-row-gap: 25px;
     font-size: 50px;
     text-align: center;
     margin-top: 5%;
@@ -361,7 +371,7 @@ footer  {
     display: grid;
     grid-template-columns: 45% 55%;
     grid-template-rows: 47.7% 47.7%;
-    
+    margin-left: 50px;
 }
 
 .footer-grid    {
@@ -370,12 +380,12 @@ footer  {
 
 .grid-diseños   {
     display: grid;
-    /* grid-template-areas: "menu menu menu"
+    grid-template-areas: "menu menu menu"
                          "diseños diseños obras"
                          "diseños diseños obras"
                          "footer footer footer";
-    grid-template-rows: auto ;
-    grid-template-columns: auto;                      */
+                         grid-template-rows: 13% 50% 48% 10% ;
+                         grid-template-columns: 80% 0%;                  
 }
 
 .header-grid    {
@@ -393,7 +403,12 @@ footer  {
 .footer-grid    {
     grid-area: footer;
 }
-
+.bur   {
+    display: none;
+}
+.bur-input  {
+    display: none;
+}
 
 /* PRESUPUESTOS */
 
@@ -588,29 +603,187 @@ button:active   {
     align-items: center;
 }
 
-@media screen and ( min-width: 320px)  {
+/* 
+         /* MOVILE FIRST ****DISEÑOS**** */
+@media screen  and (max-width: 600px) {
     .grid-diseños   {
         display: grid;
-        grid-template-areas: "menu menu"
-                             "diseños obras"
-                             "diseños obras"
-                             "footer footer";
-        grid-template-rows: auto ;
-        grid-template-columns: auto;                     
+        grid-template-areas: "menu "
+                             "diseños "
+                             "diseños "
+                             "obras"
+                             "footer ";
+        grid-template-rows: 12% 25% 57% 100% 12%;
+        grid-template-columns: 100%;                     
     }
+    .grid-obras {display: none;} 
+    .grid-casilleros    {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 20%;
+    }
+    .galeria    {
+        display: inline;
+        margin-top: 50px;
+    }
+    .abertura     {
+        width: 280px;
+        height: 180px;
+    }
+    .vista  {
+        width: 320px;
+        height: 180px;
+    }
+    .interior   {
+        width: 280px;
+        height: 180px;
+    }
+    .casas  {
+         width: 320px;
+        height: 180px;}
+    .ab { 
+        font-size: 1.5rem;
+        color:#bf7300;
+    }
+    .vi     {
+        font-size: 1.5rem;
+        color:#bf7300;
+    }
+    .in     {
+        font-size: 1.5rem;
+        color:#bf7300;
+    }
+    .ca     {
+        font-size: 1.5rem;
+        color:#bf7300;
+    }
+   body    {
+    background-size:cover;
+   }
+   .header-grid {
+    width: 100%;
+   
+   }
+   nav  {
+    width: 100%;
+    height: 100%;
+   }
+
+
+.bur-input:checked + .navegacion    {
+    background-color: #000000;
+    opacity: 0.9;
 }
-@media only screen and ( min-width: 1024px) {
+
+.navegacion {
+    display: inline;
+    margin: auto;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
 
 }
-@media only screen and ( min-width: 1200px) {
+
+.bur    {
+    display: block;
+    cursor: pointer;
+}
+
+.navegacion {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    bottom: 70px;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+
+.bur-input:checked + .navegacion    {
+    clip-path: circle(100% at center);
+}
+.footer-grid    {
+   position: fixed;
+   padding: -10px 0px;
+   margin-top: 160%;
+}
+
+.bur-input {
+    display: none;
+}
+
+.casillero-4    {
+    margin-bottom: 30%;
+}
+.casillero-1    {
+    margin-top: 20px;
+}
+.logo-inicio    {
+    margin-top: -100px;
+}
+.bur    {
+    margin-top: 15px;
+}
+.Telefono-footer    {
+    display: none;
+}
+.copy   {
+    display: none;
+}
+.footer-grid    {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-end;
+}
+.ancla-footer svg  {
+    width: 25px;
+    height: 25px;
+    padding: 0px 20px;
+
+}
+
+.ab {
+    left: 0%;
+}
+.vi {
+    left: 25%;
+}
+.in {
+    right: 55%;
+}
+.ca {
+    left: 25%;
+}
+
+
+@media screen and (min-width: 601px) and ( max-width: 1024px) {
+    .grid-diseños   {
+        display: grid;
+    }
+
+}
+
+@media screen and ( min-width: 700px) and (max-width: 1200px) {
     .grid-diseños   {
         display: grid;
         grid-template-areas: "menu menu menu"
                              "diseños diseños obras"
                              "diseños diseños obras"
                              "footer footer footer";
-        grid-template-rows: auto ;
-        grid-template-columns: auto;                     
+        grid-template-rows: 100% 70% 70% 100% ;
+        grid-template-columns: 70% 30%;                     
     }
-}
-
+   
+} 
