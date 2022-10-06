@@ -4,9 +4,9 @@
 body    {
     margin: 0;
     padding: 0;
-    background: url(./img/vista1.jpg);   
+    background: url(../img/vista1.jpg);   
     background-size:cover;
-    /* background-position: unset; */
+    
     width: 100%;
     height: 100vh;
     }
@@ -238,7 +238,6 @@ footer  {
 }
 
 .vista  {
-    /* height: 250px; */
     width: 437px;
     height: 230px;
     border-radius: 0.3em;
@@ -604,8 +603,9 @@ button:active   {
 }
 
 /* 
-         /* MOVILE FIRST ****DISEÑOS**** */
-@media screen  and (max-width: 600px) {
+         /* MOBILE ****DISEÑOS**** */
+
+@media screen and (max-width: 500px) {
     .grid-diseños   {
         display: grid;
         grid-template-areas: "menu "
@@ -613,10 +613,12 @@ button:active   {
                              "diseños "
                              "obras"
                              "footer ";
-        grid-template-rows: 12% 25% 57% 100% 12%;
+        grid-template-rows: 12% 25% 75% 12%;
         grid-template-columns: 100%;                     
     }
-    .grid-obras {display: none;} 
+    .grid-obras {display: none;
+    } 
+
     .grid-casilleros    {
         display: flex;
         flex-direction: column;
@@ -707,24 +709,19 @@ nav {
     flex-direction: column;
     clip-path: circle(0 at center);
     transition: clip-path 1s ease-in-out;
+    padding: 0px;
 }
 
 .bur-input:checked + .navegacion    {
     clip-path: circle(100% at center);
 }
-.footer-grid    {
-   position: fixed;
-   padding: -10px 0px;
-   margin-top: 160%;
-}
+
 
 .bur-input {
     display: none;
 }
 
-.casillero-4    {
-    margin-bottom: 30%;
-}
+
 .casillero-1    {
     margin-top: 20px;
 }
@@ -744,15 +741,10 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:flex-end;
 }
-.ancla-footer svg  {
-    width: 25px;
-    height: 25px;
-    padding: 0px 20px;
 
-}
 
 .ab {
     left: 0%;
@@ -767,15 +759,271 @@ nav {
     left: 25%;
 }
 
+.header-grid    {
+    height: 80px;
+}
 
-@media screen and (min-width: 601px) and ( max-width: 1024px) {
+ 
+       /* INICIO */
+
+.header-inicio  {
+    margin-bottom: 20%;
+}       
+.visitanos  {
+    height: auto;
+    width: 70%;
+    margin-bottom: 7%;
+}
+.ubic   {
+    margin-bottom: 40%;
+}
+
+.portada    {
+    margin-bottom: 7%;
+}
+
+
+.margenlogo {
+    height: 80px;
+}
+.portada    {
+    width: 100%;
+    height: auto;
+    margin-top: -40px;
+}
+.centro-menu    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-redes {
+    display: contents ;
+}
+
+.ubi            {
+    width: 100%;
+    height: auto;
+    margin-bottom: -40px;
+}
+
+.nav-logo   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon-redes {
+    display: contents;
+}
+
+.ancla-footer svg  {
+    width: 25px;
+    height: 25px;
+
+}
+.footer-grid    {
+    margin-top: 50%;
+}
+footer  {
+    margin-top: 40%;
+}
+
+    }
+
+
+@media screen and (min-width: 501px) and (max-width: 920px) {
     .grid-diseños   {
         display: grid;
+        grid-template-areas: "menu menu"
+                             "diseños "
+                             "diseños "
+                             "diseños "
+                             "diseños "
+                             "footer footer";
+                             grid-template-columns: repeat(1fr);
+                             grid-template-rows: repeat(5,1fr);
+                    
     }
+
+    body    {
+        background-size:cover;
+       }
+       .header-grid {
+        width: 100%;
+       
+       }
+       nav  {
+        width: 100%;
+       }
+
+    
+    
+    .bur-input:checked + .navegacion    {
+        background-color: #000000;
+        opacity: 0.9;
+    }
+    
+    .navegacion {
+        display: inline;
+        margin: auto;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .bur    {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navegacion {
+        position: fixed;
+        width: 100%;
+        top: 100px;
+        bottom: 70px;
+        background-color: black;
+        opacity: 0.9;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        /* transition: clip-path 1s ease-in-out; */
+        padding: 0px;
+        box-sizing:border-box;
+        
+    }
+
+
+    .bur-input:checked + .navegacion    {
+        clip-path: circle(100% at center);
+        
+    }
+    
+    .bur-input {
+        display: none;
+    }
+    
+    .casillero-4    {
+        margin-bottom: 30%;
+    }
+   
+    .casillero-1    {
+        margin-top: 20px;
+    }
+    .logo-inicio    {
+        margin-top: -100px;
+    }
+    .bur    {
+        margin-top: 15px;
+    }
+    .Telefono-footer    {
+        display: none;
+    }
+    .copy   {
+        display: none;
+    }
+    .footer-grid    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+    
+    .ab {
+        left: -8%;
+    }
+    .vi {
+        left: 27%;
+    }
+    .in {
+        right: 55%;
+    }
+    .ca {
+        left: 25%;
+    }
+
+    .grid-casilleros    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .galeria    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25%;
+        position: relative;
+    }
+.menu-inicio  {
+    position: absolute;
+}
+
+.grid-obras {
+    display: none;
+}
+
+.icon-redes {
+    display: contents ;
+}
+
+.navegacion  {
+    margin-right: 16%;
+   }
+.icon-redes {
+    display: contents;
+}
+         /* INICIO */
+
+.margenlogo {
+    height: 80px;
+}
+.portada    {
+    width: 100%;
+    height: auto;
+    margin-top: -40px;
+}
+.centro-menu    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-redes {
+    display: contents ;
+}
+
+.ubi           {
+    width: 100%;
+    height:auto;
+    margin-bottom: -40px;
+}
+
+.nav-logo   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.ancla-footer svg  {
+    width: 25px;
+    height: 25px;
+
+}
+footer  {
+    margin-top: 50%;
+}
 
 }
 
-@media screen and ( min-width: 700px) and (max-width: 1200px) {
+@media screen and (min-width: 921px) and (max-width: 1200px) {
     .grid-diseños   {
         display: grid;
         grid-template-areas: "menu menu menu"
@@ -786,4 +1034,264 @@ nav {
         grid-template-columns: 70% 30%;                     
     }
    
+.abertura  {
+    width: 320px;
+    height: 230px;
+    border-radius: 0.3em;
+    box-shadow: 5px 5px 15px #3ec70b
+    
+}
+.abertura {
+   
+    cursor:pointer;
+    position: relative;
+}
+
+
+.casillero-1    {
+    transition: all 0.3s ;
+    position: relative;
+    
+}
+.casillero-1:hover  {
+    transform: scale(1.2, 1.2);
+}
+
+.ab  {
+    font-size: 1.9rem;
+    color:   #3ec70b;
+    position:absolute;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
+}
+.ab {
+    top: 20%; 
+    left: 3%;
+    transform: translate(50%, 50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1) ;
+}
+
+
+.interior   {
+    width: 320px;
+    height: 230px;
+    border-radius: 0.3em;
+    box-shadow: 5px 5px 15px #3ec70b
+}
+
+
+.interior {
+   
+    cursor:pointer;
+    position: relative;
+}
+
+
+.casillero-3  {
+    transition: all 0.3s ;
+    position: relative;
+    
+}
+.casillero-3:hover  {
+    transform: scale(1.2, 1.2);
+}
+
+.in  {
+    font-size: 1.9rem;
+    color: #3ec70b;
+    position:absolute;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
+}
+.in {
+    top: 20%; 
+    left: 3%;
+    transform: translate(50%, 50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+.vista  {
+    width: 437px;
+    height: 230px;
+    border-radius: 0.3em;
+    box-shadow: 5px 5px 15px #3ec70b
+}
+
+
+.vista {
+    
+    cursor:pointer;
+    position: relative;
+}
+
+
+.casillero-2  {
+    transition: all 0.3s ;
+    position: relative;
+    
+}
+.casillero-2:hover  {
+    transform: scale(1.2, 1.2);
+}
+
+.vi  {
+    font-size: 1.9rem;
+    color: #3ec70b;
+    position:absolute;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
+}
+.vi {
+    top: 20%; 
+    left: 30%;
+    transform: translate(50%, 50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+
+.casas  {
+    width: 437px;
+    height: 230px;
+    border-radius: 0.3em;
+    box-shadow: 5px 5px 15px #3ec70b;
+    
+}
+
+
+.casas {
+   
+    cursor:pointer;
+    position: relative;
+}
+
+
+.casillero-4 {
+    transition: all 0.3s ;
+    position: relative;
+    
+}
+.casillero-4:hover  {
+    transform: scale(1.2, 1.2);
+}
+
+.ca  {
+    font-size: 1.9rem;
+    color: #3ec70b;
+    position:absolute;
+    font-weight: bold; 
+    -webkit-text-stroke: 0.5px   #000000;
+}
+.ca {
+    top: 20%; 
+    left: 30%;
+    transform: translate(50%, 50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+
+.obras  {
+    height: 550px;
+    width: 170px;
+    border-radius: 0.5em;
+    box-shadow: 5px 5px 15px #3ec70b;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.obras {
+   
+    cursor:pointer;
+    position: relative;
+}
+
+
+.casillero-5   {
+    transition: all 0.3s ;
+    position: relative;
+  
+}
+.casillero-5:hover  {
+    transform: scale(1.1, 1.1);
+}
+
+.ob  {
+    font-size: 1.7rem;
+    color: #3ec70b;
+    position:absolute;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px   #000000;
+  
+}
+.ob {
+    bottom: 45%; 
+    right: 65%;
+    transform: translate(50%, 50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+
+.grid-casilleros   {
+
+    max-width: 900px;
+    margin: 0px 50px;
+    grid-row-gap: 25px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -3%;
+    align-items: start ;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 47.7% 47.7%;
+    margin-left: 50px;
+}
+
+.footer-grid    {
+    margin-bottom: 0.5%;
+}
+
+.grid-diseños   {
+    display: grid;
+    grid-template-areas: "menu menu menu"
+                         "diseños diseños obras"
+                         "diseños diseños obras"
+                         "footer footer footer";
+                         grid-template-rows: 13% 50% 48% 10% ;
+                         grid-template-columns: 80% 0%;                  
+}
+
+.header-grid    {
+    grid-area: menu;
+}
+
+.grid-casilleros    {
+    grid-area: diseños;
+}
+
+.grid-obras {
+    grid-area: obras;
+}
+
+.footer-grid    {
+    grid-area: footer;
+}
+.bur   {
+    display: none;
+}
+.bur-input  {
+    display: none;
+}
 } 
+
+     /* ESTILOS BOOTSTRAP */
+     
+     /* .mas-vendido   {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      
+     }
+     .card-img-top-1    {
+        height: 400px;
+
+     } */
