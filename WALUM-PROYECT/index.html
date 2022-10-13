@@ -4,54 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ventanas, puertas, ventanales, carpinteria en aluminio, cerramientos">
+    <meta name="description" content="Remodela tu hogar con calidad al mejor precio.Presupuesta tu obra sin cargo.Termina tu casa en cuotas">
+    <meta name="author" content="Pelozo Franco G.">
+    <meta name="Copyrigth" content="Walum-Carp">
     <link rel="apple-touch-icon" sizes="180x180" href="./logos/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./logos/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./logos/favicon-16x16.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>WALUM/INICIO</title>
+    <title>Inicio / Walum</title>
+  
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body id="grilla">
-     <header class="header-inicio">
-        <nav class="nav-logo">
-               
-               <a class="margenlogo"  href="#">
-                <img class="logo-inicio" src="./img/walum-ofi-img.png" alt="logodelaempresa">
-               </a>
+<body>
 
-               <label for="box"class="bur">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(92, 220, 45);transform: msFilter;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-               </label> 
-               <input type="checkbox" id="box" class="bur-input"> 
-              
-             <ul class="navegacion" > 
-              <li><a class="menu-inicio" href="./pages/diseños.html">DISEÑOS</a></li>
-              <li><a class="menu-inicio" href="./pages/presupuesto.html">PRESUPUESTOS</a></li>
-              <li><a class="menu-inicio" href="./pages/nosotros.html">NOSOTROS</a></li>
-              <li><a class="menu-inicio" href="./pages/contacto.html">CONTACTO</a></li>
-             </ul>
+  <header class="header-inicio row header bg-black">
+    <div class="rr d-flex flex-row justify-content-between ">
+      <div class="col-lg-3">
+        <a class="logo" href="#"><img class="walum" src="./img/walum-ofi-img-2.png" alt="logo-Walum"></a>
+      </div>
+
+      <div class="col-lg-9 d-flex justify-content-end"> 
+        <nav class="navbar navbar-expand-lg">
+
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    </div>
+            <div class="collapse navbar-collapse " id="navbarNav">
+
+              <ul class="navbar-nav d-flex flex-colum align-items-end">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./pages/diseños.html">Diseños</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/presupuesto.html">Presupuestos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </ul>
+
+            </div>
+          </div>
         </nav>
-     </header>
+     </div>
+  </header>
 
-     <div class="centro-menu">
-       <main>
+
+     <main class="centro-menu">
+
+       <div>
             <!-- portada -->
       <img class="portada" src="./img/portada-walum-transparente.png" alt="fotodeportada" data-aos="zoom-in-down" data-aos-duration="700">
-       </main>
+       </div>
       
         <aside class="ubicacion-oficina">
-          <section><h4 class="visitanos" data-aos="flip-left" data-aos-duration="700"> Visita nuestra oficina </h4></section>
+          <div>
+            <section class="ofi-text"><h4 class="visitanos" data-aos="flip-left" data-aos-duration="700"> Visita nuestra oficina </h4></section>
+          </div>
             <!-- ubicacion -->
             <div class="ubic">
           <iframe class="ubi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.9151829291062!2d-58.9753065708194!3d-27.47981970913776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cd174dea97d%3A0x3bea436fece8484b!2sPje.%20Jos%C3%A9%20M%C3%A1rmol%202399-2499%2C%20H3506EYC%20Resistencia%2C%20Chaco!5e0!3m2!1ses-419!2sar!4v1661746672612!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="zoom-in-up" data-aos-duration="700"></iframe>
            </div>
         </aside>
-     </div>
+     </main>
     
      <footer>
       <div class="copy">
-        <p>copyrigth</p>
+        <p>Copyrigth ©</p>
        </div>
 
        <p class="Telefono-footer">Tel: +54 000-000000 / Resistencia-Ch</p>
@@ -75,6 +102,10 @@
       </p>
     
      </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> 
+     
     
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script>

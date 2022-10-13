@@ -1,0 +1,45 @@
+footer  {
+    
+    border-radius: 0.7em;
+    background-color: $background-principal ;
+    // opacity: 0.8;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include propiedades-flex (row, space-between, center);
+   
+  
+    .Telefono-footer    {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        color: #3ec70b;
+        font-family: sans-serif;
+        margin: 0px 0px 0px 100px;
+    }
+    
+    .copy   {
+        color: #3ec70b;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+    .ancla-footer {color: #3ec70b;
+        padding: 20px;
+        margin: 0px 0px 0px 0px;
+        
+        font-family: sans-serif;
+        text-decoration: none;
+      
+        }
+    .ancla-footer :hover    {
+        color: #bf7300;
+    }
+    
+}
