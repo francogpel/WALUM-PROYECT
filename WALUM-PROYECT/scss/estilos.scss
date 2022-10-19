@@ -1,8 +1,9 @@
-    // variables
-@import "./utilities/variables";
 
     // mixins
 @import "./utilities/mixins";
+
+    // variables
+@import "./utilities/variables";
 
     // reset
 @import "./base/reset";
@@ -96,6 +97,7 @@
         border-radius: 0.9em;
         box-shadow: 4px 4px 15px #3ec70b ;
         transition: all 0.2s;
+
     }
     .ab a img:hover {
     transform: scale(1.2, 1.2);    
@@ -422,6 +424,10 @@
 // header
 .header-inicio{
     margin-right: 0;
+    padding: 0%;
+    .rr   {
+        padding: 0;
+    }
 }
 
         //   main
@@ -483,6 +489,9 @@
     // header
     .heade-diseños  {
         margin-right:0 ;
+        .rr   {
+            padding: 0;
+        }
     }
     // main
     .container-img {
@@ -497,6 +506,9 @@
 
         .ob {
             display: none;
+        }
+        .ca a img 	{
+            margin-bottom: 90px;
         }
     }
      // footer
@@ -525,6 +537,9 @@
 .header-presup  {
     width: auto;
     margin-right:0 ;
+    .rr   {
+        padding: 0;
+    }
 }
     // main
     .medio-presup  {
@@ -564,6 +579,9 @@
     .nos    {
         width: auto;
         margin-right: 0;
+        .rr   {
+            padding: 0;
+        }
     }
     // main
     .centro-nosotros    {
@@ -596,6 +614,9 @@
     .header-contacto    {
         width: auto;
         margin-right: 0;
+        .rr   {
+            padding: 0;
+        }
     }
     // main
     .centro-contacto    {
@@ -633,6 +654,14 @@
 @media screen and (min-width: 421px) and (max-width: 920px) {
   
     // inicio
+    .header-inicio{
+        margin-right: 0;
+        padding: 0%;
+        .rr   {
+            padding: 0;
+        }
+    }
+    
      //   main
      .centro-menu    {
         display: flex;
@@ -693,6 +722,14 @@
     }
 
     // diseños
+    .header-inicio{
+        margin-right: 0;
+        padding: 0%;
+        .rr   {
+            padding: 0;
+        }
+    }
+    
 //   main
 .container-img {
     width: 80%;
@@ -707,7 +744,7 @@
     .ob {
         display: none;
     }
-
+    
     
 .ab a img:hover {
     transform: scale(1.2, 1.2);    
@@ -793,6 +830,14 @@
     }
 
     // presupuestos
+    .header-inicio{
+        margin-right: 0;
+        padding: 0%;
+        .rr   {
+            padding: 0;
+        }
+    }
+    
     // main
     .medio-presup  {
         width: 100%;
@@ -832,6 +877,9 @@
     .nos    {
         width: 100%;
         margin: 0;
+        .rr   {
+            padding: 0;
+        }
     }
     // main
  .centro-nosotros    {

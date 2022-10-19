@@ -38,7 +38,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.805);
   padding-top: 10px;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -407,6 +407,10 @@ footer .ancla-footer :hover {
   }
   .header-inicio {
     margin-right: 0;
+    padding: 0%;
+  }
+  .header-inicio .rr {
+    padding: 0;
   }
   .centro-menu {
     display: flex;
@@ -460,6 +464,9 @@ footer .ancla-footer :hover {
   .heade-diseños {
     margin-right: 0;
   }
+  .heade-diseños .rr {
+    padding: 0;
+  }
   .container-img {
     width: 85%;
     height: 90vh;
@@ -472,6 +479,9 @@ footer .ancla-footer :hover {
   }
   .container-img .ob {
     display: none;
+  }
+  .container-img .ca a img {
+    margin-bottom: 90px;
   }
   footer {
     width: 100%;
@@ -495,6 +505,9 @@ footer .ancla-footer :hover {
   .header-presup {
     width: auto;
     margin-right: 0;
+  }
+  .header-presup .rr {
+    padding: 0;
   }
   .medio-presup {
     width: 100%;
@@ -529,6 +542,9 @@ footer .ancla-footer :hover {
     width: auto;
     margin-right: 0;
   }
+  .nos .rr {
+    padding: 0;
+  }
   .centro-nosotros .nosotros {
     display: none;
   }
@@ -554,6 +570,9 @@ footer .ancla-footer :hover {
   .header-contacto {
     width: auto;
     margin-right: 0;
+  }
+  .header-contacto .rr {
+    padding: 0;
   }
   .centro-contacto .titulo-contactos {
     width: auto;
@@ -583,6 +602,13 @@ footer .ancla-footer :hover {
   }
 }
 @media screen and (min-width: 421px) and (max-width: 920px) {
+  .header-inicio {
+    margin-right: 0;
+    padding: 0%;
+  }
+  .header-inicio .rr {
+    padding: 0;
+  }
   .centro-menu {
     display: flex;
     flex-direction: column;
@@ -634,6 +660,13 @@ footer .ancla-footer :hover {
   }
   footer .icon-redes {
     display: contents;
+  }
+  .header-inicio {
+    margin-right: 0;
+    padding: 0%;
+  }
+  .header-inicio .rr {
+    padding: 0;
   }
   .container-img {
     width: 80%;
@@ -724,6 +757,13 @@ footer .ancla-footer :hover {
   footer .icon-redes {
     display: contents;
   }
+  .header-inicio {
+    margin-right: 0;
+    padding: 0%;
+  }
+  .header-inicio .rr {
+    padding: 0;
+  }
   .medio-presup {
     width: 100%;
   }
@@ -757,6 +797,9 @@ footer .ancla-footer :hover {
   .nos {
     width: 100%;
     margin: 0;
+  }
+  .nos .rr {
+    padding: 0;
   }
   .centro-nosotros {
     display: flex;

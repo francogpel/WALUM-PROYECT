@@ -2,10 +2,9 @@ footer  {
     
     border-radius: 0.7em;
     background-color: $background-principal ;
-    // opacity: 0.8;
     padding-top: 10px;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
     @include propiedades-flex (row, space-between, center);
    
